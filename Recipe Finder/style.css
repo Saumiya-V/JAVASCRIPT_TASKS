@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Search Box */
+.meal-search-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-control {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-btn {
+  background: #ff5733;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.search-btn:hover {
+  background: #e64a19;
+}
+
+/* Meal Result */
+.meal-result {
+  margin-top: 30px;
+}
+
+.meal-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meal-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.meal-name {
+  margin-top: 10px;
+}
+
+.recipe-btn {
+  display: inline-block;
+  background: #ff5733;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.recipe-btn:hover {
+  background: #e64a19;
+}
+
+/* Meal Details */
+.meal-details {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.btn-recipe-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.recipe-meal-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.recipe-link a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff5733;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+

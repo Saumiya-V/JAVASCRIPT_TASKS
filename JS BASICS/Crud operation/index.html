@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>CRUD</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <form onsubmit="event.preventDefault();onFormSubmit()" autocomplete="off">
+         
+          <div>
+            Full Name:<input type="text" name="fullname" id="fullname">
+          </div>
+          <div>
+            Employee_Id:<input type="text" name="Employee_Id" id="Employee_Id">
+          </div>
+          <div>
+            Salary:<input type="number" name="salary" id="salary">
+          </div>
+          <div>
+            City:<input type="text" name="city" id="city">
+          </div>
+          <div class="btn">
+            <input type="submit" value="submit">
+          </div>
+        </form>
+      </td>
+      <td>
+        <!--table to fill all records-->
+        <table class="list" id="empList">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Employee_Id</th>
+              <th>Salary</th>
+              <th>City</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>

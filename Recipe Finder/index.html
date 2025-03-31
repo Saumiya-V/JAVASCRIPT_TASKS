@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Recipe Finder</title>
+</head>
+<body>
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <h2 class="title">Find Meals and Recipes for the Ingredients</h2>
+        <div class="meal-search-box">
+          <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+          <button type="submit" calss="search-btn" id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+      <div class="meal-result">
+        <h2 class="title">Your Search Result</h2>
+        <div id="meal">
+          <div class="meal-item">
+            <img src="download.jpeg" alt="food">
+          </div>
+          <div class="meal-name">
+            <h3>Potato Chips</h3>
+            <a href="#" class="recipe-btn">Get a Recipe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="meal-details">
+      <button class="btn-recipe-close" id="recipe-closeBtn">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="meal-details-content">
+        <h2 class="recipe-title">Meals Name here</h2>
+        <p class="recipe-category">Category Name</p>
+        <div class="recipe-instruct">
+          <h3>Instructions:</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, maxime a. Tempore quam quibusdam veniam, beatae quia sint eum reiciendis exercitationem similique quae quis quisquam esse cupiditate laudantium incidunt suscipit!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatibus pariatur expedita veritatis dignissimos dolorem iusto totam earum nisi repellat eveniet quasi veniam excepturi enim cum, mollitia perspiciatis sed natus!</p>
+        </div>
+        <div class="recipe-meal-image">
+          <img src="download.jpeg" alt="food">
+
+        </div>
+        <div class="recipe-link">
+          <a href="#" target="_blank">Watch video</a>
+        </div>
+      </div>
+     </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
