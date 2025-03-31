@@ -63,4 +63,25 @@ async function postFetch(){
   }
 }
 
-postFetch
+postFetch()
+
+//Fetch a post from https://jsonplaceholder.typicode.com/posts/1
+//Log the title and body in the console
+
+async function fetchData(){
+  try{
+    let response=await fetch('https://jsonplaceholder.typicode.com/posts/1')
+    if(!response.ok){
+      throw new Error(`HTTP Error! Status: ${response.status}`);
+
+    }
+    let data=await response.json();
+    console.log("Title:",data.title)
+    console.log("Body:",data.body)
+  }
+  catch(error){
+    console.error("Error:",error)
+  }
+}
+fetchData()
+
